@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Sinyo Motor (UTS)</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="page-login">
+  <main class="container auth-layout">
+    <section class="auth-illustration">
+      <!-- ilustrasi sederhana/placeholder -->
+      <div class="illus-card">
+        <div class="illus-circle"></div>
+        <div class="illus-lines">
+          <div></div><div></div><div></div>
+        </div>
+      </div>
+      <h3>Selamat Datang!</h3>
+      <p>Masuk untuk mengelola data produk Sinyo Motor.</p>
+    </section>
+
+    <section class="auth-card card">
+      <form id="loginForm" class="form">
+        <h2>Login</h2>
+
+        <label class="input-wrap">
+          <span class="label">Email Address</span>
+          <input id="email" type="email" placeholder="email@domain.com" />
+        </label>
+
+        <label class="input-wrap">
+          <span class="label">Password (isi dengan NIM)</span>
+          <input id="password" type="password" placeholder="NIM Anda" />
+        </label>
+
+        <p id="loginError" class="error hidden"></p>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+
+        <div class="or-line"><span>Or</span></div>
+
+        <div class="socials">
+          <button type="button" class="btn btn-outline">Google</button>
+          <button type="button" class="btn btn-outline">Facebook</button>
+        </div>
+
+        <p class="muted">Belum punya akun? <a href="#">Sign Up</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>

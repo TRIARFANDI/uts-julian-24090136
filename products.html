@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Data Produk - Sinyo Motor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="page-produk">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="brand">Sinyo Motor</div>
+    <nav class="nav">
+      <button id="toDashboard" class="btn btn-ghost">Dashboard</button>
+      <button id="logoutBtn2" class="btn btn-outline">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container produk-layout">
+
+    <!-- FORM TAMBAH / EDIT PRODUK -->
+    <section class="card">
+      <h2>Form Produk</h2>
+
+      <div id="produkError" class="error-message hidden"></div>
+
+      <form id="produkForm">
+
+        <input type="hidden" id="prdId">
+
+        <div class="form-group">
+          <label>Nama Produk</label>
+          <input type="text" id="prdName" placeholder="Nama produk">
+        </div>
+
+        <div class="form-group">
+          <label>Harga Produk</label>
+          <input type="text" id="prdPrice" placeholder="Harga (angka saja)">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Simpan</button>
+        <button type="button" id="resetForm" class="btn btn-outline">Reset</button>
+      </form>
+    </section>
+
+    <!-- LIST PRODUK -->
+    <section class="card">
+      <h2>List Data Produk</h2>
+
+      <p id="emptyNote" style="display:none;">Belum ada produk.</p>
+
+      <ul id="productList" class="product-list"></ul>
+    </section>
+
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

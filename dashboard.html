@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - Sinyo Motor</title>
+
+  <!-- Pastikan path sesuai folder kamu -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="page-dashboard">
+    <!-- TOPBAR -->
+    <header class="topbar">
+        <div class="brand">Sinyo Motor</div>
+        <nav class="nav">
+            <button id="toggleDark" class="btn btn-ghost">Dark Mode</button>
+            <button id="logoutBtn" class="btn btn-outline">Logout</button>
+        </nav>
+    </header>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">⚙</div>
+    <ul>
+      <li class="active"><span>🏠</span></li>
+      <li><span>📦</span></li>
+      <li><span>💲</span></li>
+      <li><span>📊</span></li>
+      <li><span>⚙</span></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="dashboard-main">
+    
+    <h1 class="dashboard-title">Dashboard</h1>
+
+    <div class="summary-wrapper">
+
+      <!-- Card 1 -->
+      <div class="summary-card">
+        <div class="icon">👜</div>
+        <p class="label">Total Products</p>
+        <h2 id="totalProducts">0</h2>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="summary-card">
+        <div class="icon">👜</div>
+        <p class="label">Total Sales</p>
+        <h2 id="totalSales">0</h2>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="summary-card">
+        <div class="icon">💲</div>
+        <p class="label">Total Revenue</p>
+        <h2 id="totalRevenue">Rp 0</h2>
+      </div>
+
+    </div>
+    
+    
+    <button id="lihatProdukBtn" class="btn btn-primary">Lihat Data Produk</button>
+
+    <div class="content-box"></div>
+
+  </main>
+
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
